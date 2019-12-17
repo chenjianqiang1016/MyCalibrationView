@@ -124,9 +124,10 @@ class MyCalibrationView : View {
             return
         }
 
+        //临时画笔，辅助用
         tempPaint = Paint(Paint.ANTI_ALIAS_FLAG)
         tempPaint?.color = Color.BLACK
-        paint?.strokeWidth = 10f
+        tempPaint?.strokeWidth = 10f
 
         lineTextDistance = UiUtils.dp2px(mContext!!, 10f).toFloat()
 

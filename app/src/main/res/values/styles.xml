@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--刻度控件自定义属性-->
+    <declare-styleable name="MyCalibrationView">
+        <attr name="lineColor" format="color"/>
+        <attr name="pointColor" format="color"/>
+        <attr name="tSize" format="integer"/>
+        <attr name="tColor" format="color"/>
+        <attr name="moveTSize" format="integer"/>
+        <attr name="moveTColor" format="color"/>
+    </declare-styleable>
+
+</resources>

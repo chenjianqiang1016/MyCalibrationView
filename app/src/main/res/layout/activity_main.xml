@@ -4,23 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2200ff00"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.demo.mycalibrationview.MyCalibrationView
-        android:id="@+id/myCalibrationView"
+    <ScrollView
+        android:id="@+id/sv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="20dp"
-        android:background="#ffffff"
-        app:lineColor="#55ff0000"
-        app:moveTColor="#000000"
-        app:moveTSize="20"
-        app:pointColor="#0000ff"
-        app:tColor="#999999"
-        app:tSize="15" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#55ff0000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#5500ff00" />
+
+            <com.demo.mycalibrationview.MyLinearLayout
+                android:id="@+id/myLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.demo.mycalibrationview.MyCalibrationView
+                    android:id="@+id/myCalibrationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#ffffff"
+                    app:lineColor="#55ff0000"
+                    app:moveTColor="#000000"
+                    app:moveTSize="20"
+                    app:pointColor="#0000ff"
+                    app:tColor="#999999"
+                    app:tSize="15" />
+
+            </com.demo.mycalibrationview.MyLinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#55ff0000" />
+
+
+            <com.demo.mycalibrationview.MySwitchView
+                android:id="@+id/studySetChToEnSv"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#5500ff00" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#55ff0000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#5500ff00" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </LinearLayout>

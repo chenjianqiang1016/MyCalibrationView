@@ -58,7 +58,7 @@
 
             <com.demo.mycalibrationview.MySwitchView
                 android:id="@+id/studySetChToEnSv"
-                android:layout_width="50dp"
+                android:layout_width="100dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="50dp"

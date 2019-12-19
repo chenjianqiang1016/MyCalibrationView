@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MySwitchView">
+        <!--开关打开时，背景的颜色-->
+        <attr name="bgOpenColor" format="color"/>
+        <!--开关关闭时，背景的颜色-->
+        <attr name="bgCloseColor" format="color"/>
+        <attr name="circleColor" format="color"/>
+    </declare-styleable>
+
+</resources>
